@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Teko:wght@300..700&display=swap');
+
+/* font-family: "Bebas Neue", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background: linear-gradient(130deg, white 50%, black 50%);
+    /* background-size: 900%; */
+    /* background: linear-gradient(125deg, black 50%, white 50%); */
+    min-height: 100vh;
+    /* background: scroll; */
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.header {
+    /* position: fixed; */
+    position: sticky;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* mix-blend-mode: difference; */
+}
+
+.backgr {
+    background-color: white;
+}
+
+#img {
+    mix-blend-mode: normal !important;
+    width: 12rem;
+}
+
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    width: 25%;
+    color: white;
+    text-decoration: none;
+    /* font-weight: 700; */
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.h1 {
+    color: white;
+    width: 60%;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Teko", sans-serif;
+    padding-top: 15rem;
+    mix-blend-mode: difference;
+    /* position: fixed; */
+}
+
+/* section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* .mainstuff {
+    scroll-snap-type: mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+} */
+
+/* .container {
+    scroll-snap-type: mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+} */
+
+.home-section {
+    z-index: 1;
+    /* position: absolute; */
+    height: 100vh;
+}
+
+.second-section {
+    z-index: 100;
+}
+
+/* p {
+    font-family: "Teko", sans-serif;
+    font-size: 2vw;
+    position: absolute;
+    top: 10%;
+    left: 12%;
+} */
+
+/* 
+.home-section  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* @keyframes gradient {
+    0% { color: #ff0000; } Red
+    25% { color: #ffff00; } Yellow
+    50% { color: #00ff00; } Green
+    75% { color: #0000ff; } Blue
+    100% { color: #ff00ff; } Magenta
+  } */
+
+  /* @keyframes gradient {
+    0% { color: #ff0000; }
+    25% { color: #ffff00; }
+    50% { color: #00ff00; }
+    75% { color: #0000ff; }
+    100% { color: #ff00ff; }
+  } */
+
+  /* @keyframes gradient {
+    0% { color: black; }
+    25% { color: white; }
+    50% { color: black; }
+    75% { color: white; }
+    100% { color: black; }
+  } */
+  
+  .h1 {
+    animation: gradient 5s infinite alternate; /* Alternate between the colors */
+  }
+
+
+
+/* .logo  {
+    color: white;
+    text-transform: uppercase;
+    animation: moveUpDown 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  } */
+
+/* body {
+    background-color: black !important;
+    color: white !important;
+}
+
+.navbar-toggler-icon, span {
+    color: white !important;
+}
+
+#navbar-brand {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    width: 2.2rem !important;
+    height: 2.2rem !important;
+    background-image: none !important;
+}
+
+
+.navbar-nav.ms-auto {
+    text-align: center;
+} */
+
