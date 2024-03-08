@@ -11,7 +11,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
+    width: 100%;
     background: linear-gradient(130deg, white 50%, black 50%);
     /* background-size: 900%; */
     /* background: linear-gradient(125deg, black 50%, white 50%); */
@@ -20,6 +25,14 @@ body {
     color: white;
     mix-blend-mode: difference;
 }
+
+main:not(.container) {
+    mix-blend-mode: normal !important;
+}
+
+/* img {
+    mix-blend-mode: normal !important;
+} */
 
 .header {
     /* position: fixed; */
@@ -39,19 +52,10 @@ body {
     /* mix-blend-mode: difference; */
 }
 
-.backgr {
-    background-color: white;
-}
-
-#img {
-    mix-blend-mode: normal !important;
-    width: 12rem;
-}
-
 .logo {
     font-family: "Bebas Neue", sans-serif;
     font-size: 40px;
-    width: 25%;
+    /* width: 25%; */
     color: white;
     text-decoration: none;
     /* font-weight: 700; */
@@ -81,18 +85,457 @@ body {
     width: 100%;
 }
 
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    max-width: 1900px;
+    /* height: 100vh; */
+}
+
+.leftcont {
+    width: 60%;
+}
+
+/* .homebtns {
+    display: flex;
+    justify-content: center;
+} */
+
+.icons {
+    display: inline-grid;
+    position: absolute;
+    /* margin-top: 1%; */
+    z-index: 99;
+}
+
+#icons {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.icons i {
+    font-size: 3vw;
+    margin-top: 50%;
+    background-color: black;
+    color: white;
+}
+
+.icons i:hover {
+    color: lightgreen;
+    transition: 0.5s ease;
+}
+
+/* .git-icons {
+    position: relative;
+    margin-top: 10%;
+  }
+  
+.git-icons img {
+    position: absolute;
+    width: 4.5vw;
+    margin-left: 3%;
+  }
+
+  #top {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    border-radius: 10%;
+  }
+
+  #bottom {
+    background-color: white;
+    border-radius: 50%;
+  } */
+
+  /* #bottom {
+    border-radius: 10%;
+  } */
+  
+  /* @keyframes fade {
+      0% {
+          opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    } */
+    /* 0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    } */
+    
+i.fa-brands.fa-linkedin-in {
+    animation: gradient 1s infinite alternate !important;
+}
+
+i.fa-brands.fa-instagram {
+    animation: gradient2 1s infinite alternate !important;
+}
+
+i.fa-brands.fa-github {
+    animation: gradient3 1s infinite alternate !important;
+}
+
+
+@keyframes gradient {
+    0% { color: #ffca00; background-color: black; border: 0.5px solid black; border-radius: 10%; padding: 12.5% 25%; }
+    100% { color: black; background-color: #ffca00; border: 0.5px solid #ffca00; border-radius: 10%; padding: 12.5% 25%; }
+}
+
+@keyframes gradient2 {
+    /* 33% { color: #abac32; }
+    66% { color: #07f660; }
+    100% { color: #0165f3; } */
+    0% { color: white; background: transparent;  border: 1px solid black; border-radius: 10%; padding: 12.5% 25%; }
+    100% { color: black;
+        background: linear-gradient(-30deg, #abac32 0%, #07f660 50%, #0165f3 100%); border: 1px solid transparent; border-radius: 10%; padding: 12.5% 25%; }
+    /* 100% { color: black; background: linear-gradient(-30deg, rgba(84,86,205,1) 0%, rgba(248,8,159,1) 50%, rgba(254,154,12,1) 100%); border: 1px solid transparent; border-radius: 10%; padding: 2px 4px; } */
+}
+
+@keyframes gradient3 {
+    0% { color: white; background-color: black; border: 0.1px solid black; border-radius: 10%; padding: 12.5% 25%;  }
+    100% { background-color: white; color: black; border: 0.1px solid black; border-radius: 10%; padding: 12.5% 25%;  }
+}
+
+/* background: rgb(84,86,205);
+background: linear-gradient(180deg, rgba(84,86,205,1) 0%, rgba(248,8,159,1) 49%, rgba(254,154,12,1) 100%); */
+
+  /* @keyframes gradientt {
+    100% { color: linear-gradient(180deg, #5456cd 0%, #f8089f 50%, #fe9a0c 100%); }
+    50% { color: #ffff00; }
+    50% { color: #00ff00; }
+    75% { color: #0000ff; }
+    100% { color: #ff00ff; }
+  } */
+
+  /* @keyframes gradientt {
+    from {
+      color: #abac32;
+    }
+    to {
+      color: #07f660;
+    }
+    to {
+        color: #0165f3;
+    }
+  } */
+  
+/* @keyframes gradient {
+    0% { color: #ff0000; }
+    25% { color: #ffff00; }
+    50% { color: #00ff00; }
+    75% { color: #0000ff; }
+    100% { color: #ff00ff; }
+  } */
+
+.leftcont a {
+    color: black;
+    text-decoration: none;
+    /* font-size: 1.5vw; */
+    font-size: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    border: 3px solid black;
+    border-radius: 0.4rem;
+    margin-left: 13%;
+    /* transition: 05s ease; */
+}
+
+.leftcont a:hover {
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    transition: 0.5s ease-in-out;
+}
+
+/* .cv {
+    margin-left: 20%;
+} */
+
+.backgr {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#img {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 50%;
+    mix-blend-mode: normal !important;
+}
+
 .h1 {
     color: white;
-    width: 60%;
+    /* margin-left: 12%; */
+    /* width: 60%; */
+    /* font-size: 6rem; */
     font-size: 6vw;
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Teko", sans-serif;
-    padding-top: 15rem;
+    /* padding-top: 15rem; */
     mix-blend-mode: difference;
     /* position: fixed; */
+    z-index: 1;
 }
+
+.cv {
+    margin-left: 12% !important;
+}
+
+.subsection {
+    /* padding-top: 5rem; */
+    padding-top: 8%;
+    max-width: 1900px;
+    margin: auto;
+    padding-left: 10%;
+    margin-right: 5%
+}
+
+.subhead {
+    /* text-align: center; */
+    font-size: 6vw;
+    font-family: "Teko", sans-serif;
+}
+
+.aboutme {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-left: 5%;
+    font-size: 30px;
+}
+
+.aboutxt {
+    width: 50%;
+    font-size: 30px;
+}
+
+.section2-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume h2 {
+    font-size: 25px;
+    color: black;
+}
+
+.resume p {
+    font-size: 18px;
+    color: black;
+    padding-top: 6%;
+}
+
+.card-text {
+    padding-top: 7%;
+}
+
+.cards {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2%;
+    height: auto;
+}
+
+.cardimg {
+    width: 30%;
+}
+
+.skills {
+    margin-left: -5%;
+}
+
+.skills i {
+    font-size: 8vw;
+}
+
+/* .fa-html5 .fa-css3 .fa-js .fa-vuejs .fa-database .fa-wordpress-simple .fa-bootstrap .fa-node {
+    width: 12rem;
+} */
+
+/* #skill-icons {
+    width: 5rem;
+} */
+
+.top-cards {
+    display: flex;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.bottom-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.scards {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin-left: 5%;
+
+}
+
+
+
+/* slider style */
+
+/* .slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.slider-images {
+    z-index: 20;
+    display: block;
+    max-width: 1300px;
+    width: 100%;
+    position: relative;
+}
+
+.slider-images h2 p {
+    position: relative;
+}
+
+.slider-dots {
+    z-index: 30;
+    top: 90%;
+    position: absolute;
+    display: block;
+    text-align: right;
+    max-width: 1300px;
+    width: 100%;
+    margin-right: 7rem;
+}
+
+.active1 {
+    opacity: 0.5;
+    animation: rotate 0.5s forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-385deg);
+      }
+  }
+
+#img1 {
+    width: 100%;
+    float: right;
+}
+
+.slider-images .slider-dots img {
+    display: inline;
+}
+
+.slider-images img {
+    display: none;
+}
+
+.slider-text h2.active2 {
+    display: inline-block;
+}
+
+.slider-images img.active1 {
+    display: inline-block;
+}
+
+.slider-images img.active {
+    display: inline-block;
+}
+
+.slider:before {
+    content: "";
+    width: 50%;
+    background-color: #244AC2;
+    position: absolute;
+    height: 7.5rem;
+    left: 0%;
+    top: 43%;
+}
+
+.slider:after {
+    content: "";
+    width: 50%;
+    background-color: red;
+    position: absolute;
+    height: 7.5rem;
+    right: 0%;
+    top: 43%;
+}
+
+.arrow {
+    background-image: url(https://visiofund.co.za/wp-content/themes/visio/images/slider-next.svg);
+    position: absolute;
+    top: 56%;
+    right: 2%;
+    margin-top: -5rem;
+    cursor: pointer;
+    z-index: 30;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+
+
+/* .aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 /* section {
     height: 100vh;
@@ -112,15 +555,7 @@ body {
     height: 100vh;
 } */
 
-.home-section {
-    z-index: 1;
-    /* position: absolute; */
-    height: 100vh;
-}
 
-.second-section {
-    z-index: 100;
-}
 
 /* p {
     font-family: "Teko", sans-serif;
@@ -161,9 +596,9 @@ body {
     100% { color: black; }
   } */
   
-  .h1 {
-    animation: gradient 5s infinite alternate; /* Alternate between the colors */
-  }
+  /* .h1 {
+    animation: gradient 5s infinite alternate;
+  } */
 
 
 
@@ -211,3 +646,180 @@ body {
     text-align: center;
 } */
 
+/* @media only screen and (max-width: 768px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+    .menu-btn {
+        display: block;
+    }
+} */
+
+/* @media only screen and (max-width: 875px) { */
+@media only screen and (max-width: 1255px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+    .menu-btn {
+        display: block;
+    }
+
+    .aboutxt {
+        font-size: 24px;
+    }
+
+    .aboutme {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .h1 {
+        /* font-size: 5.5vw; */
+        margin-left: 0;
+    }
+
+    .leftcont a {
+        margin-left: 9%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .leftcont a {
+        font-size: 18px;
+    }
+
+    .skills h2 {
+        font-size: 18px;
+    }
+
+    /* .h1 {
+        font-size: 6vw;
+        margin-left: 15%;
+    } */
+
+    /* .cv {
+        margin-left: 3% !important;
+    } */
+}
+
+@media only screen and (max-width: 600px) {
+    .icons i {
+        margin: -20%;
+    }
+
+    .skills h2 {
+        font-size: 12px;
+    }
+
+    /* .section2-cont {
+        display: inline-flex;
+    } */
+
+    /* .section2-cont { 
+        display: flex;
+        flex-direction: column-reverse;
+    } */
+}
+
+@media only screen and (max-width: 700px) {
+    .leftcont a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutxt {
+        font-size: 18px;
+    }
+
+    .aboutme {
+        font-size: 18px;
+    }
+
+    .skills h2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .leftcont a {
+        font-size: 10px;
+    }
+
+    .aboutxt {
+        font-size: 13px;
+    }
+
+    .aboutme {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .aboutme {
+        font-size: 11px;
+    }
+    .aboutxt {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .leftcont a {
+        font-size: 9px;
+        margin-left: 12%;
+    }
+
+    .cv {
+        margin-left: 2% !important;
+    }
+}
+
+/* @media only screen and (max-width: 1680px) {
+    .subsection {
+        padding-left: 10%;
+        margin-right: 5%
+    }
+} */
