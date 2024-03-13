@@ -85,6 +85,62 @@ main:not(.container) {
     width: 100%;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: auto;
+    border-top: 2px solid white;
+    text-align: center;
+    /* padding: 6% 0; */
+    margin-bottom: 2%;
+    /* margin-top: 2%; */
+    width: 80%;
+}
+
+.foot-cont {
+    display: inline;
+}
+
+#footlogo {
+    font-size: 3vw;
+}
+
+/* .copyright {
+    text-align: end;
+    font-size: 1.5vw;
+    text-align: center;
+} */
+
+.footicons i {
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+.footicons i:hover {
+    color: white;
+    opacity: 0.7;
+    animation: rotate 0.5s forwards;
+    transition: 0.5s ease;
+}
+
+.footicons {
+    text-align: center;
+}
+
+
+
 .home-section {
     display: flex;
     justify-content: center;
@@ -994,6 +1050,14 @@ textarea:valid~label {
         font-size: 6vw;
         color: black;
     }
+
+    #footlogo {
+        font-size: 5vw;
+    }
+
+    .footicons i {
+        font-size: 4vw;
+    }
       
 
 }
@@ -1110,6 +1174,14 @@ textarea:valid~label {
 
     .subhead {
         font-size: 8vw;
+    }
+
+    #footlogo {
+        font-size: 6vw;
+    }
+
+    .footicons i {
+        font-size: 5vw;
     }
 
 /* #contact-header {
