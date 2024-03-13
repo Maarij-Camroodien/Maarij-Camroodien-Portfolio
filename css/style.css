@@ -125,59 +125,20 @@ main:not(.container) {
 }
 
 .icons i:hover {
-    color: lightgreen;
+    color: white;
+    opacity: 0.7;
+    animation: rotate 0.5s forwards;
     transition: 0.5s ease;
 }
 
-/* .git-icons {
-    position: relative;
-    margin-top: 10%;
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
   }
-  
-.git-icons img {
-    position: absolute;
-    width: 4.5vw;
-    margin-left: 3%;
-  }
-
-  #top {
-    animation-name: fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    border-radius: 10%;
-  }
-
-  #bottom {
-    background-color: white;
-    border-radius: 50%;
-  } */
-
-  /* #bottom {
-    border-radius: 10%;
-  } */
-  
-  /* @keyframes fade {
-      0% {
-          opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    } */
-    /* 0% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    } */
 
 /* i.fa-brands.fa-github.not {
     animation: gradient4 infinite alternate !important;
@@ -192,7 +153,7 @@ main:not(.container) {
     color: red !important;
 }
     
-i.fa-brands.fa-linkedin-in {
+/* i.fa-brands.fa-linkedin-in {
     animation: gradient 1s infinite alternate !important;
 }
 
@@ -208,22 +169,22 @@ i.fa-brands.fa-github {
 @keyframes gradient {
     0% { color: #ffca00; background-color: black; border: 0.5px solid black; border-radius: 10%; padding: 12.5% 25%; }
     100% { color: black; background-color: #ffca00; border: 0.5px solid #ffca00; border-radius: 10%; padding: 12.5% 25%; }
-}
+} */
 
-@keyframes gradient2 {
+/* @keyframes gradient2 { */
     /* 33% { color: #abac32; }
     66% { color: #07f660; }
     100% { color: #0165f3; } */
-    0% { color: white; background: transparent;  border: 1px solid black; border-radius: 10%; padding: 12.5% 25%; }
+    /* 0% { color: white; background: transparent;  border: 1px solid black; border-radius: 10%; padding: 12.5% 25%; }
     100% { color: black;
-        background: linear-gradient(-30deg, #abac32 0%, #07f660 50%, #0165f3 100%); border: 1px solid transparent; border-radius: 10%; padding: 12.5% 25%; }
+        background: linear-gradient(-30deg, #abac32 0%, #07f660 50%, #0165f3 100%); border: 1px solid transparent; border-radius: 10%; padding: 12.5% 25%; } */
     /* 100% { color: black; background: linear-gradient(-30deg, rgba(84,86,205,1) 0%, rgba(248,8,159,1) 50%, rgba(254,154,12,1) 100%); border: 1px solid transparent; border-radius: 10%; padding: 2px 4px; } */
-}
+/* } */
 
-@keyframes gradient3 {
+/* @keyframes gradient3 {
     0% { color: white; background-color: black; border: 0.1px solid black; border-radius: 10%; padding: 12.5% 25%;  }
     100% { background-color: white; color: black; border: 0.1px solid black; border-radius: 10%; padding: 12.5% 25%;  }
-}
+} */
 
 /* background: rgb(84,86,205);
 background: linear-gradient(180deg, rgba(84,86,205,1) 0%, rgba(248,8,159,1) 49%, rgba(254,154,12,1) 100%); */
@@ -268,6 +229,7 @@ background: linear-gradient(180deg, rgba(84,86,205,1) 0%, rgba(248,8,159,1) 49%,
     border: 3px solid white;
     border-radius: 0.4rem;
     margin-left: 14%;
+    margin-top: 5%;
 }
 
 .leftcont a:hover {
@@ -1176,8 +1138,12 @@ textarea:valid~label {
       }
 
       #aboutxt {
-        width: 100%;
-        margin-left: 50%;
+        width: 150%;
+        margin-left: 23%;
+        text-align: center;
+    }
+
+    .aboutme {
         text-align: center;
     }
 }
