@@ -2,19 +2,15 @@
 
 window.addEventListener('scroll', function() {
   var header = document.querySelector('.header');
-  // var logo = document.querySelector('.logo');
-  // var navbar = document.querySelector('.navbar a');
   var container = document.querySelector('.container');
   
-  // Calculate the distance between the top of the page and the top of the '.container' element
   var containerOffset = container.offsetTop;
   
   if (window.scrollY >= containerOffset) {
-    header.style.backgroundColor = 'black'; // Change background color when the scroll position reaches the '.container' element
-    // logo.style.color = 'white'
-    // navbar.style.color = 'white'
+    header.style.backgroundColor = 'black';
+
   } else {
-    header.style.backgroundColor = 'transparent'; // Revert to transparent background when the scroll position is above the '.container' element
+    header.style.backgroundColor = 'black';
   }
 });
 
@@ -29,34 +25,35 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//slider 
 
-// $(document).ready(function(){
-//   $('.arrow').on('click', function(){
-//       var currentImg = $('.active');
-//       var nextImg = currentImg.next();
+const carouselSlides = document.querySelectorAll('.carousel-slide');
+let currentIndex = 0;
 
-//       if(nextImg.length){
-//           currentImg.removeClass('active').css('z-index', -10);
-//           nextImg.addClass('active').css('z-index', 10);
-//       } else {
-//           currentImg.removeClass('active').css('z-index', -10);
-//           $('.slider-images .slides img:first').addClass('active').css('z-index', 10);
-//       }
-//   });
-// });
+function showSlide(index) {
+  carouselSlides.forEach((slide, i) => {
+    slide.style.display = i === index ? 'inline-grid' : 'none';
+  });
+}
 
-// $(document).ready(function(){
-//   $('.arrow').on('click', function(){
-//       var currentdot = $('.active1');
-//       var nextdot = currentdot.next();
+function nextSlide() {
+  currentIndex++;
+  if (currentIndex >= carouselSlides.length) {
+    currentIndex = 0;
+  }
+  showSlide(currentIndex);
+}
 
-//       if(nextdot.length){
-//           currentdot.removeClass('active1').css('opacity', 1);
-//           nextdot.addClass('active1').css('opacity', 0.5);
-//       } else {
-//           currentdot.removeClass('active1').css('opacity', 1);
-//           $('.slider-dots img:first').addClass('active1').css('opacity', 0.5);
-//       }
-//   });
-// });
+function prevSlide() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = carouselSlides.length - 1;
+  }
+  showSlide(currentIndex);
+}
+
+// Initially show the first slide
+showSlide(currentIndex);
+
+// Add event listeners for next and previous buttons
+document.getElementById('nextBtn').addEventListener('click', nextSlide);
+document.getElementById('prevBtn').addEventListener('click', prevSlide);

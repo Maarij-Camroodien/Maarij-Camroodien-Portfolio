@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" 
     integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV" crossorigin="anonymous"/>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" 
-integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" 
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
 </head>
 <body class="body">
     <div class="minc">
@@ -16,18 +16,18 @@ integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="ano
         <a class="logo" href="#">MAARIJ CAMROODIEN</a>
         <a class="menu-btn"><i class="fas fa-bars"></i></a>
         <nav class="navbar">
-          <a href="#" class="navlinks">HOME</a>
-          <a href="#" class="navlinks">ABOUT</a>
-          <a href="#" class="navlinks">RESUME</a>
-          <a href="#" class="navlinks">SKILLS</a>
-          <a href="#" class="navlinks">PROJECTS</a>
-          <a href="#" class="navlinks">PEER REVIEWS</a>
-          <a href="#" class="navlinks">CONTACT</a>
+          <a href="#home" class="navlinks">HOME</a>
+          <a href="#about" class="navlinks">ABOUT</a>
+          <a href="#resume" class="navlinks">RESUME</a>
+          <a href="#skills" class="navlinks">SKILLS</a>
+          <a href="#projects" class="navlinks">PROJECTS</a>
+          <a href="#peer" class="navlinks">PEER REVIEWS</a>
+          <a href="#contact" class="navlinks">CONTACT</a>
           <!-- <a href="#"></a> -->
         </nav>
       </header>
       <main class="container">
-          <section class="home-section">
+          <section class="home-section" id="home">
             <div class="leftcont">
               <div class="icons">
                 <a id="icons" href="https://www.linkedin.com/in/ma-arij-camroodien-384525276/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -48,8 +48,8 @@ integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="ano
               Full-Stack Developer
               </h1>
               <div class="homebtns">
-                <a href="#">Let's Connect</a>
-              <a href="#" class="cv">Download CV</a>
+                <a href="#contact" id="connect">Let's Connect</a>
+              <a href="https://drive.google.com/uc?export=download&id=1XUpG6mA4NC-IeHBANv1md_io-kSMFWKP" download class="cv">Download CV</a>
               </div>
             </div>
             <div class="backgr">
@@ -59,46 +59,46 @@ integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="ano
               <img class="imgs" id="img" src="https://i.ibb.co/SXXn5tb/20231221-230455-cropped-modified.jpg" alt="">
             </div>
           </section>
-          <section class="subsection">
+          <section class="subsection" id="about">
             <h1 class="subhead">ABOUT</h1>
             <div class="section2-cont">
-              <div class="aboutxt">
-                <p id="aboutxt">
-                  Hi, I'm Ma'arij Camroodien 
-                  I'm 19 years old and I just finished matric with little to no coding experience. 
-                  I've been working with computers from the age of 13 and the more I worked with them I discoverd that 
-                  I have a passion for coding and decided to persue a career in Web-Development. In my free time I enjoy playing sports, 
-                  watching anime and spending time with my family and friends. 
-                </p>
-              </div>
               <div class="aboutme">
-                <p>Name: Ma'arij Camroodien</p>
-                <p>Age: 19</p>
-                <p>Address: Rylands, Athlone, Cape Town, Western Cape</p>
+                <p>Phone: 0616896182</p>
+                <p>Email: maarijcamroodien18@gmail.com</p>
+                <p>Address: Rylands, Cape Town,</p>
                 <p></p>
                 <!-- <img class="img2" src="https://i.ibb.co/6BdzX5k/20231220-192819.jpg" alt=""> -->
               </div>
+              <div class="aboutxt">
+                <p id="aboutxt">
+                  Hi, I'm Ma'arij Camroodien 
+                  I'm 19 years old and currently embracing the role of an intern at Life Choices. 
+                  I've been working with computers from the age of 13 and was always intrested in coding and had 
+                  a passion for technology and decided to persue a career in Web-Development. In my free time I enjoy playing sports, 
+                  watching anime and spending time with my family and friends. 
+                </p>
+              </div>
             </div>
           </section>
-          <section class="subsection">
+          <section class="subsection" id="resume">
             <h1 class="subhead">RESUME</h1>
             <div class="resume">
               <div class="cards">
-                <img class="cardimg" src="https://i.ibb.co/9pCk14q/RHS-removebg-preview-1-modified.webp" alt="rhslogo">
+                <i class="fa-solid fa-user-graduate"></i>
                 <div class="card-text">
                   <h2>Rylands High School</h2>
                 <p>Matriculated at Rylands High School with a batchelors</p>
                 </div>
               </div>
               <div class="cards">
-                <img class="cardimg" src="https://i.ibb.co/k68pqC2/photog-img-2-scaled-modified.webp" alt="rhslogo">
+                <i class="fa-solid fa-camera"></i>
                 <div class="card-text">
                   <h2>Unikem Photo Lab</h2>
                 <p>Worked at 'Unikem Photo Lab' developing photos, ID photos, and professional photos</p>
                 </div>
               </div>
               <div class="cards">
-                <img class="cardimg" src="https://i.ibb.co/KmMPvvz/lifechices-1-modified.webp" alt="rhslogo">
+                <i class="fa-solid fa-code"></i>
                 <div class="card-text">
                   <h2>Life Choices</h2>
                 <p>Completed 6 month Coding Camp at Life Choices Academy</p>
@@ -106,165 +106,189 @@ integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="ano
               </div>
             </div>
           </section>
-          <section class="subsection">
-            <h1 class="subhead">SKILLS</h1>
+        </section>
+        <section class="subsection" id="skills">
+          <h1 class="subhead">SKILLS</h1>
+          <div class="skills">
+            <div class="top-cards">
+              <div class="scards">
+                <i id="skill-icons" class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+              </div>
+              <div class="scards" id="scards">
+                <i class="fa-brands fa-css3"></i>
+                <h2>CSS</h2>
+              </div>
+              <div class="scards">
+                <i class="fa-brands fa-js"></i>
+                <h2>JAVASCRIPT</h2>
+              </div>
+              <div class="scards" id="scards">
+                <i class="fa-brands fa-vuejs"></i>
+                <h2>VUE JS</h2>
+              </div>
+            </div>
+            <div class="bottom-cards">
+              <div class="scards">
+                <i class="fa-solid fa-database"></i>
+                <h2>MYSQL</h2>
+              </div>
+              <div class="scards" id="scards">
+                <i class="fa-brands fa-wordpress-simple"></i>
+                <h2>WORDPRESS</h2>
+              </div>
+              <div class="scards">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h2>BOOTSTRAP</h2>
+              </div>
+              <div class="scards" id="scards">
+                <i class="fa-brands fa-node"></i>
+                <h2>NODE JS</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subsection" id="projects">
+          <h1 class="subhead">PROJECTS</h1>
+          <div class="projects">
+            <div class="toprow">
+              <div class="pcards">
+                <a href="https://maarij-bmicalculator.netlify.app/" target="_blank">
+                 <img class="pcardimg" src="https://i.ibb.co/zh7Ft5d/bmi-calculator.png" alt="project4">
+               </a>
+               <div class="pcard-text">
+                <a href="https://github.com/Maarij-Camroodien/bmicalculator" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                 </div>
+               </div>
+               <div class="pcards">
+                 <a href="https://temperature-converter15.netlify.app/" target="_blank">
+                  <img class="pcardimg" src="https://i.ibb.co/cF7z8fm/Temperature-Converter.png" alt="project2">
+                </a>
+                <div class="pcard-text">
+                  <a href="https://github.com/Maarij-Camroodien/temperatureConverter" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                  </div>
+                </div>
+            </div>
+             <div class="bottomrow">
+              <div class="pcards">
+                <a href="https://maarij-calculator.netlify.app/" target="_blank">
+                 <img class="pcardimg" src="https://i.ibb.co/1MNymBH/Calculator.png" alt="project3">
+               </a>
+               <div class="pcard-text">
+                <a href="https://github.com/Maarij-Camroodien/calculator" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                 </div>
+               </div>
+               <div class="pcards">
+                <a href="https://elementalchallenge1.netlify.app/" target="_blank">
+                 <img class="pcardimg" src="https://i.ibb.co/Tg67Ryr/Screenshot-2024-03-11-122601.png" alt="project1">
+               </a>
+               <div class="pcard-text">
+                <a href="https://github.com/Maarij-Camroodien/ElementalChallenge" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </section>
+          <section class="subsection" id="peer">
+            <h1 class="subhead">PEER REVIEWS</h1>
+
+            <div class="carousel-container">
+              <div class="carousel-slide" id="carousel-slide">
+                <img src="https://dev-maarij-camroodien-portfolio.pantheonsite.io/wp-content/uploads/2023/10/Mish-Al-Taliep-scaled.webp" alt="Mish-Al-Taliep">
+                <div class="testimonial-text">
+                  <h2>Mish-Al Taliep</h2>
+                  <p>"Ma'arij is an individual who keeps his personal life and work life in two different worlds. 
+                    He is objective driven and always has that eagerness to learn and adapt. Ma'arij shows good 
+                    leadership qualities and he is also well liked among his peers. I would recommend him to any 
+                    company as he will be a valuable asset."</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://dev-maarij-camroodien-portfolio.pantheonsite.io/wp-content/uploads/2023/10/IMG_9296-scaled.webp" alt="Uthmaan Samsodien">
+                <div class="testimonial-text">
+                  <h2>Uthmaan Samsodien</h2>
+                  <p>"Ma'arij is a very determined being, always focused and wanting to get things done on time. 
+                    This is an excellent trait to have as web developer as you will always be on par with deadlines. 
+                    Ma'arij is very good when working alone and even better when he is put into a group. He is always 
+                    trying to upskill his self by asking questions or learning from his peers, this making him a very hard 
+                    working being. He is very good in HTML and CSS. Ma'arij is kind and is good with working with people."</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://dev-maarij-camroodien-portfolio.pantheonsite.io/wp-content/uploads/2023/10/Codi-Kader-scaled.webp" alt="Codi Kader">
+                <div class="testimonial-text">
+                  <h2>Codi Kader</h2>
+                  <p>"Ma'arij Camroodien, I love that man. He is so down to earth and kind. He can put a smile on anyones 
+                    face with just a few words. He is really passionate about web development and his craft. Ma'arij is always 
+                    willing to help with problems relating to any type of work he can help with. He is definitely a great addition 
+                    to any team or company. He works really well in a team and can bring a team alive and help them in any way possible. 
+                    However, if needed he works really well alone as well."</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://dev-maarij-camroodien-portfolio.pantheonsite.io/wp-content/uploads/2023/10/LCA-Rabia-Haucha-Ju23-5-scaled.webp" alt="Rabia Haucha">
+                <div class="testimonial-text">
+                  <h2>Rabia Haucha</h2>
+                  <p>"As for a starter Ma'arij is very helpful and brings positive vibes into the workplace.He is extremely helpful and always 
+                    pays attention in class.His work is always neat and his progress has improved alot over the past few weeks.He is a fast 
+                    learner and pays as much attention to detail as possible.He is a kind human being and is very considerate and overall he 
+                    works really hard to get his work done.I would highly recommend him because he would not only exceed your expectations 
+                    but his ambition would strive in any company!"</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://dev-maarij-camroodien-portfolio.pantheonsite.io/wp-content/uploads/2023/10/C12-C2-Summer-de-Wet-1-scaled.webp" alt="Summer De Wet">
+                <div class="testimonial-text">
+                  <h2>Summer De Wet</h2>
+                  <p>"Ma'arij has proven himself to be exceptional at whatever he sets out to do, demonstrating a strong aptitude for 
+                    coding and a deep passion for technology. I believe Ma'arij has a bright future ahead of him as a developer, possessing 
+                    a rare combination of technical ability, work ethic and passion for his craft which would serve him well in any role."</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="https://dev-maarij-camroodien-portfolio.pantheonsite.io/wp-content/uploads/2023/10/C11-Uzukhanye-Dywili-4-scaled.webp" alt="Summer De Wet">
+                <div class="testimonial-text">
+                  <h2>Uzukhanye Dywili</h2>
+                  <p>"Working with Ma'arij was an incredible experience. Their professionalism, attention to detail, and communication 
+                    skills made the entire process seamless. They consistently exceeded my expectations and delivered exceptional results. 
+                    I would highly recommend Ma'arij to anyone looking for a talented and dedicated professional."</p>
+                </div>
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+            
+            <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+
+          </section>
+          <section class="subsection" id="contact">
+            <h1 class="subhead" id="contact-header">CONTACT</h1>
+            <div class="contactform">
+              <form action="https://formspree.io/f/xyyrpovw" method="POST">
+                <div class="row">
+                  <div class="input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="number"><i class="fa-solid fa-user"></i> Name</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" id="name" name="phone" required>
+                    <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="text" id="email" name="email" required>
+                  <label for="email" class="emaill"><i class="fa-solid fa-envelope"></i> Email</label>
+                </div>
+                <div class="input-group">
+                  <textarea id="message" rows="8" name="text" required></textarea>
+                  <label for="message" id="messagelabel"><i class="fa-solid fa-comments"></i> You Message</label>
+                </div>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i> SUMBIT</button>
+              </form>
+            </div>
           </section>
       </main>
     </div>
 </body>
 <script src="js/main.js"></script>
 </html>
-
-<!-- <a class="navbar-brand" id="navbar-brand" href="#"><span>M</span><span>A</span><span>'</span>
-    <span>A</span><span>R</span><span>I</span><span>J</span></a> -->
-
-    <!-- <section class="home-section">
-      <h1 class="h1">Maarij Camroodien</h1>
-    </section> -->
-
-
-
-    <!-- html -->
-    <!-- <div class="slider-container">
-      <input type="range" min="0" max="100" value="50" class="slider" id="peerSlider">
-      <div class="slider-value" id="sliderValue">50</div>
-    </div> -->
-
-
-
-
-    <!-- .slider-container {
-      width: 80%;
-      margin: 20px auto;
-    }
-    
-    .slider {
-      -webkit-appearance: none;
-      width: 100%;
-      height: 10px;
-      border-radius: 10px;
-      background: #d3d3d3;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s;
-    }
-
-    .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background: #4CAF50;
-      cursor: pointer;
-      }
-
-      .slider::-moz-range-thumb {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #4CAF50;
-        cursor: pointer;
-        }
-        
-        .slider-value {
-        text-align: center;
-        margin-top: 10px;
-        
-        font-size: 18px;
-        } -->
-
-
-
-
-        <!-- JavaScript:
-```javascript
-// Get the slider and output element
-var slider = document.getElementById("peerSlider");
-var output = document.getElementById("sliderValue");
-
-// Display the default slider value
-output.innerHTML = slider.value;
-
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-} -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- slider -->
-
-
-     <!-- <div class="skills">
-              <div class="top-cards">
-                <div class="scards">
-                  <i id="skill-icons" class="fa-brands fa-html5"></i>
-                  <h2>HTML</h2>
-                </div>
-                <div class="scards">
-                  <i class="fa-brands fa-css3"></i>
-                  <h2>CSS</h2>
-                </div>
-                <div class="scards">
-                  <i class="fa-brands fa-js"></i>
-                  <h2>JAVASCRIPT</h2>
-                </div>
-                <div class="scards">
-                  <i class="fa-brands fa-vuejs"></i>
-                  <h2>VUE JS</h2>
-                </div>
-              </div>
-              <div class="bottom-cards">
-                <div class="scards">
-                  <i class="fa-solid fa-database"></i>
-                  <h2>MYSQL</h2>
-                </div>
-                <div class="scards">
-                  <i class="fa-brands fa-wordpress-simple"></i>
-                  <h2>WORDPRESS</h2>
-                </div>
-                <div class="scards">
-                  <i class="fa-brands fa-bootstrap"></i>
-                  <h2>BOOTSTRAP</h2>
-                </div>
-                <div class="scards">
-                  <i class="fa-brands fa-node"></i>
-                  <h2>NODE JS</h2>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="subsection">
-            <h1 class="subhead">PROJECTS</h1>
-          </section>
-          <section class="subsection">
-            <h1 class="subhead">PEER REVIEWS</h1>
-            <div class="slider">
-              <div class="slider-text">
-                <h2 class="active2">uthmaan Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorum recusandae voluptates reprehenderit? Laborum unde perferendis culpa facilis, exercitationem ipsa.</h2>
-              </div>
-              <div class="slider-images">
-                <a class="arrow"></a>
-                  <img class="active" id="img1" src="https://i.ibb.co/Tv6B8vS/pexels-tom-mal-k-3408354-resized.png" alt="img1">
-                  <img id="img1" src="https://i.ibb.co/syRNtqP/pexels-krivec-ales-547115-resized.png" alt="img2">
-                  <img id="img1" class="img3" src="https://i.ibb.co/2q8fZVD/pexels-liger-pham-1108701-resized-1.png" alt="img3">
-                  <img id="img1" class="img3" src="https://i.ibb.co/W0jH9fW/pexels-stein-egil-liland-3472764-resized.png" alt="img4">
-            </div>
-            <div class="slider-dots">
-                <img class="active1" id="dots" src="https://svgshare.com/i/13gm.svg" alt="dot1">
-                <img class="dot" id="dots" src="https://svgshare.com/i/13gm.svg" alt="dot2">
-                <img class="dot" id="dots" src="https://svgshare.com/i/13gm.svg" alt="dot3">
-                <img class="dot" id="dots" src="https://svgshare.com/i/13gm.svg" alt="dot4">
-            </div>
