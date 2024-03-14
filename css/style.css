@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Teko:wght@300..700&display=swap');
 
 /* font-family: "Bebas Neue", sans-serif; */
 
@@ -8,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -402,6 +403,8 @@ background: linear-gradient(180deg, rgba(84,86,205,1) 0%, rgba(248,8,159,1) 49%,
     border-radius: 1rem;
     padding: 2%;
     height: 21rem;
+    /* margin-left: 1%; */
+    margin-right: 1%;
 }
 
 .cardimg {
@@ -834,13 +837,13 @@ textarea:valid~label {
 @media only screen and (max-width: 1300px) {
     .cards {
         display: inline-grid;
-        height: 17rem;
+        /* height: 17rem; */
     }
 }
 
 @media only screen and (max-width: 1500px) {
     .cards {
-        height: 17rem;
+        /* height: 17rem; */
     }
 
     textarea:focus~label,
@@ -862,7 +865,7 @@ textarea:valid~label {
 
 @media only screen and (max-width: 1100px) {
     .cards {
-        height: 17rem;
+        /* height: 17rem; */
     }
 
     textarea:focus~label,
@@ -990,6 +993,7 @@ textarea:valid~label {
 
     .cards {
         width: 100%;
+        margin-bottom: 1%;
     }
 
     .cards i {
@@ -1107,11 +1111,6 @@ textarea:valid~label {
 
     .aboutme {
         font-size: 13px;
-    }
-
-    .leftcont a {
-        /* font-size: 10px; */
-        /* padding: 0.1rem; */
     }
     
     #connect {
